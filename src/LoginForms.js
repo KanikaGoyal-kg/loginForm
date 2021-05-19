@@ -14,6 +14,11 @@ const LoginForms = () => {
 
         const {value, name} = event.target
         setPersonData((preValue) => {
+            // or we can de with spread operator
+            // return {
+            //     ...preValue,
+            //     [name] : value,
+            // }
             if (name === "fname") {
                 return {
                     fname: value,
